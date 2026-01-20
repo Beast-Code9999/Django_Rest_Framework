@@ -5,6 +5,16 @@ Refactored function-based views to class-based views, then progressively simplif
 
 ## Key Concepts Learned
 
+### class based views
+
+Class-Based Views (category)
+├── APIView (basic, you write everything)
+├── Mixins + GenericAPIView (medium automation)
+└── Generic Views (high automation) ← You'll use these
+    ├── ListCreateAPIView
+    ├── RetrieveUpdateDestroyAPIView
+    └── etc.
+
 ### 1. APIView (Basic Class-Based View)
 - Inherit from `APIView`
 - Define methods: `get()`, `post()`, `put()`, `delete()`
